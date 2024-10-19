@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '../store';
 import { LandingPageActions } from './reducers/actions';
+import { getPublicURL } from '../utils';
 
 const Testimonial = () => {
     const [selectedCustomerReview, setSelectedCustomerReview] = React.useState(0);
@@ -25,7 +26,7 @@ const Testimonial = () => {
                                 className={`cursor-pointer flex flex-col justify-center items-center xl:items-start ${index !== selectedCustomerReview ? "opacity-50 text-gray-400" : ""}`}
                                 onClick={() => setSelectedCustomerReview(index)}
                             >
-                                <img className="w-16 h-16 rounded-full" src="/images/avatar.png" alt="Avatar" />
+                                <img className="w-16 h-16 rounded-full" src={getPublicURL("/images/avatar.png")} alt="Avatar" />
                                 <span className='title-4'>{review.name}</span>
                             </div>
                         )

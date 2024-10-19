@@ -1,4 +1,5 @@
 import { title } from "process";
+import { getPublicURL } from "../utils";
 
 export const serviceSectionData = {
     subSection1: [
@@ -37,7 +38,7 @@ export const section2Data = {
         description: "Maecenas sit amet dui et purus imperdiet venenatis. Donec placerat arcu vulputate dictum blandit. Pellentesque tincidunt congue nunc, eget cursus mauris efficitur vel. Proin et nunc ultrices libero pharetra congue vitae sit amet odio. Fusce quis quam quis erat congue eleifend. Curabitur magna diam, interdum sed tincidunt et, finibus et ipsum. Cras justo mauris imperdiet vitae metus vel placerat nunc."
     },
     subsection2: {
-        image: "/images/image-1.png",
+        image: getPublicURL("/images/image-1.png"),
     }
 };
 

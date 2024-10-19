@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/Button';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { getPublicURL } from '../utils';
 
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
                 <div className='grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-0'>
                     <div className='col-span-1 xl:col-span-6 h-full flex flex-col justify-between gap-8'>
                         <div>
-                            <img src="/images/logo.png" alt="Askitect" />
+                            <img src={getPublicURL("/images/logo.png")} alt="Askitect" />
                         </div>
                         <div>
                             <ul className='flex gap-6 list-none'>
