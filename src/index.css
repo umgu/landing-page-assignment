@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+:root {
+  --primary-color: #161d3a;
+  --secondary-color: #252753;
+  --tertiary-color: #4d4397;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #bfbcdd;
+  --color-1: #282e49;
+}
+
+.title-1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.title-2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.title-3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title-4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .title-1 {
+    font-size: 36px;
+  }
+  
+  .title-2 {
+    font-size: 28px;
+  }
+  
+  .title-3 {
+    font-size: 20px;
+  }
+}
